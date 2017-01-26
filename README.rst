@@ -11,4 +11,4 @@ Generate dist like this::
 Install twine and upload new version::
 
   pip3 install twine
-  twine upload dist/*
+  twine upload dist/* --skip-existing
