@@ -9,10 +9,13 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-student-oauth',
-    version='0.3',
+    version='0.4',
     packages=find_packages(),
+    install_requires=[
+        'requests',
+    ],
     include_package_data=True,
-    license='GNU General Public License v3 (GPLv3)',  # example license
+    license='GNU General Public License v3 (GPLv3)',
     description='Description',
     long_description=README,
     url='http://bde-insa-lyon.fr',
